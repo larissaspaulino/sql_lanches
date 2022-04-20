@@ -1,4 +1,4 @@
--- Aqui você deve colocar os códigos SQL referentes às
+
 -- Simulações de um CRUD
 -- Criação
 -- 1)
@@ -24,7 +24,7 @@ VALUES
     (6, 8);
 
 -- Leitura
--- 1)
+-- 1) pedidos e os produtos dos pedidos da cliente Georgia.
 SELECT
     c.id,
     c.nome,
@@ -46,7 +46,7 @@ WHERE
     pe.cliente_id = 6;
 
 -- Atualização
--- 1)
+-- 1) Some os pontos de lealdade da cliente Georgia e faça uma query para atualizar somente os pontos de lealdade dela para o valor somado.
 UPDATE
     clientes
 SET

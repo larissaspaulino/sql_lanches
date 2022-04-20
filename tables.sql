@@ -1,4 +1,4 @@
--- Aqui você deve colocar os códigos SQL referentes à
+
 -- Criação das tabelas
 -- Tabela clientes
 CREATE TABLE IF NOT EXISTS clientes(
