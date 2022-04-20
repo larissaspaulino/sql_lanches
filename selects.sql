@@ -21,7 +21,7 @@ FROM
     JOIN produtos pro ON pro.id = pp.produto_id
     JOIN pedidos pe ON pp.pedido_id = pe.id
 WHERE
-    pro.id = 6;
+    pro.nome LIKE 'Fritas';
 
 -- 3) Consulte novamente por pedidos que incluam 'Fritas', porém agora, retorne apenas uma coluna (gostam_de_fritas) com o nome dos Clientes que fizeram os pedidos.
 SELECT
@@ -32,7 +32,7 @@ FROM
     JOIN pedidos pe ON pp.pedido_id = pe.id
     JOIN clientes c ON c.id = pe.cliente_id
 WHERE
-    pro.id = 6;
+    pro.nome LIKE 'Fritas';
 
 -- 4) Crie uma query que retorne o custo total dos pedidos da 'Laura'.
 SELECT
@@ -43,7 +43,7 @@ FROM
     JOIN pedidos pe ON pp.pedido_id = pe.id
     JOIN clientes c ON c.id = pe.cliente_id
 WHERE
-    pe.cliente_id = 5;
+    c.nome LIKE 'Laura';
 
 -- 5) Crie uma query que retorne em uma coluna o nome do produto, e na outra, o número de vezes que ele foi pedido. Dica: a função built-in COUNT pode somar o número de ocorrências de um id em uma coluna.
 SELECT
